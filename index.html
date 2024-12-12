@@ -1,11 +1,82 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rebond - Landing</title>
-  </head>
-  <body>
-    Hello world !
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rebond - Landing</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#236476',
+            secondary: '#70C88E',
+          },
+          fontFamily: {
+            'montserrat': ['Montserrat']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="h-screen w-screen flex flex-col font-montserrat">
+  <header>
+    <nav class="flex items-center justify-between px-8 py-2">
+      <a href="#" class="flex items-center gap-2">
+        <img src="assets/logo-rebond.svg" alt="Rebond" class="h-12 w-auto">
+        <div>
+          <span class="text-5xl font-semibold text-secondary">re</span><span
+            class="text-5xl font-semibold text-primary">bond</span>
+        </div>
+      </a>
+    </nav>
+  </header>
+  <div class="grow flex flex-col items-center justify-center gap-8">
+    <div class="flex items-center gap-2">
+      <img src="assets/logo-rebond.svg" alt="Rebond" class="h-12 w-auto">
+      <div>
+        <span class="text-5xl font-semibold text-secondary">re</span><span
+          class="text-5xl font-semibold text-primary">bond</span>
+      </div>
+    </div>
+    <h1 class="text-center text-2xl text-primary font-bold">
+      <div>Financer les <span class="text-secondary">Energies Renouvelables</span></div>
+      <div>par la Tokénisation d’Obligations</div>
+    </h1>
+    <a href="mailto:bonjour@rebond.eco" class="font-semibold text-xl text-primary"><span class="text-secondary">bonjour</span>@rebond.eco</a>
+  </div>
+  <footer class="bg-primary flex justify-end px-8 py-4">
+    <div class="flex items-center gap-1">
+      <img src="assets/logo-rebond-dark.svg" alt="Rebond" class="h-6 w-auto">
+      <div>
+        <span class="text-2xl font-semibold text-secondary">re</span><span
+          class="text-2xl font-semibold text-white">bond</span>
+      </div>
+    </div>
+
+  </footer>
+  <!-- <div class="flex flex-col items-center text-center px-4">
+    <img src="assets/logo-rebond.svg" alt="Logo" class="w-32 h-32 mb-8">
+    <h1 class="text-2xl md:text-4xl font-bold text-gray-800 mb-4">
+      Un message accrocheur pour présenter votre offre
+    </h1>
+    <p class="text-gray-600 mb-8">
+      Une courte description, slogan ou phrase clé qui décrit votre proposition de valeur.
+    </p>
+    <p class="text-sm md:text-base text-gray-700">
+      Pour plus d’informations, contactez-nous à
+      <a href="mailto:votre-adresse-email@domaine.com" class="text-blue-600 underline hover:text-blue-800">
+        votre-adresse-email@domaine.com
+      </a>.
+    </p>
+  </div> -->
+</body>
+
 </html>
